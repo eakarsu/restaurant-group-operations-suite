@@ -7,6 +7,13 @@ Primary routes:
 - `/profiles`
 
 Feature routes:
+- `/beverage-margin-review`
+- `/sommelier-pairing`
+- `/wine-spirits-inventory`
+- `/nutrition-menu-labels`
+- `/food-costing`
+- `/menu-digitizer`
+- `/recipe-planner`
 - `/records`
 - `/orders`
 - `/catalog`

@@ -1,8 +1,8 @@
 # Restaurant Group Operations Suite Source Data Tables
 
-Mapped source projects: 5
+Mapped source projects: 8
 
-Detected source tables: 168
+Detected source tables: 251
 
 | Source Project | Table | Framework | Columns | Source File |
 | --- | --- | --- | ---: | --- |
@@ -111,6 +111,89 @@ Detected source tables: 168
 | AIGhostKitchenNetworkManager | temperature_logs | SQL | 10 | backend/seed.js |
 | AIGhostKitchenNetworkManager | users | SQL | 6 | backend/seed.js |
 | AIGhostKitchenNetworkManager | waste_records | SQL | 11 | backend/seed.js |
+| AIMenuDigitizer | ai_analysis | SQL | 8 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | allergens | SQL | 6 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | dish_recommendations | SQL | 9 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-dietary-filter-recommendations.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-guest-preference-personalization.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-guest.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-menu-seasonal-rotation.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-mobile.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-native.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-order.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-qr-code.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-supplier.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-waste-reduction-advisor.ts |
+| AIMenuDigitizer | gap_features | SQL | 6 | backend/src/routes/gap-webhooks.ts |
+| AIMenuDigitizer | ingredients | SQL | 8 | backend/src/routes/ingredientCosts.ts |
+| AIMenuDigitizer | locations | SQL | 8 | backend/src/routes/locations.ts |
+| AIMenuDigitizer | menu_item_ingredients | SQL | 4 | backend/src/routes/ingredientCosts.ts |
+| AIMenuDigitizer | menu_items | SQL | 13 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | menus | SQL | 8 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | nutrition | SQL | 12 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | price_suggestions | SQL | 13 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | staff_assignments | SQL | 6 | backend/src/routes/staff.ts |
+| AIMenuDigitizer | token_blacklist | SQL | 5 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | translations | SQL | 7 | backend/src/db/migrate.ts |
+| AIMenuDigitizer | users | SQL | 6 | backend/src/db/migrate.ts |
+| AiRecipeMealPlanner | categories | Sequelize | 4 | backend/models/Category.js |
+| AiRecipeMealPlanner | cooking_timers | Sequelize | 10 | backend/models/CookingTimer.js |
+| AiRecipeMealPlanner | dietary_profiles | Sequelize | 11 | backend/models/DietaryProfile.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-allergendetection-crosscontamination-risk.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-barcodeproduct-database-lookup-usda-openf.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-budgetoptimizer-costaware-nutrition-goals.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-dietaryrestrictionmapper-restrictions-ing.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-grocery-store-price-api-integration.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-meal-photo-recognition.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-mealprepplan-batch-cooking-recommendation.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-notifications-for-shopping-reminders.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-pantry-inventory-tracking.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-recipe-ratingsreviews-route.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-seasonalingredientsuggester.js |
+| AiRecipeMealPlanner | gap_features | SQL | 7 | backend/routes/gap-no-sharingsocial-features.js |
+| AiRecipeMealPlanner | grocery_items | Sequelize | 7 | backend/models/GroceryItem.js |
+| AiRecipeMealPlanner | grocery_lists | Sequelize | 4 | backend/models/GroceryList.js |
+| AiRecipeMealPlanner | grocery_optimizations | Sequelize | 10 | backend/models/GroceryOptimization.js |
+| AiRecipeMealPlanner | ingredients | Sequelize | 7 | backend/models/Ingredient.js |
+| AiRecipeMealPlanner | leftover_suggestions | Sequelize | 8 | backend/models/LeftoverSuggestion.js |
+| AiRecipeMealPlanner | meal_plan_items | Sequelize | 8 | backend/models/MealPlanItem.js |
+| AiRecipeMealPlanner | meal_plans | Sequelize | 6 | backend/models/MealPlan.js |
+| AiRecipeMealPlanner | nutrition_balances | Sequelize | 10 | backend/models/NutritionBalance.js |
+| AiRecipeMealPlanner | nutrition_logs | Sequelize | 9 | backend/models/NutritionLog.js |
+| AiRecipeMealPlanner | recipes | Sequelize | 15 | backend/models/Recipe.js |
+| AiRecipeMealPlanner | users | Sequelize | 9 | backend/models/User.js |
+| AIWineSpiritsinventorySommelier | cellar_alerts | SQL | 12 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | cellar_zones | SQL | 16 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | cocktail_recipes | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | consumption_log | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | custom_view_rules | SQL | 16 | backend/routes/customViews.js |
+| AIWineSpiritsinventorySommelier | customers | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | deliveries | SQL | 15 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | distributor_orders | SQL | 6 | backend/routes/integrations.js |
+| AIWineSpiritsinventorySommelier | expenses | SQL | 16 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | food_pairings | SQL | 15 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | gap_features | SQL | 5 | backend/routes/batch09GapAi.js |
+| AIWineSpiritsinventorySommelier | gap_features | SQL | 5 | backend/routes/batch09GapNonai.js |
+| AIWineSpiritsinventorySommelier | inventory | SQL | 22 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | inventory_audits | SQL | 16 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | maintenance_log | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | price_optimization | SQL | 19 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | purchase_orders | SQL | 19 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | reservations | SQL | 18 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | sales | SQL | 16 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | sommelier_courses | SQL | 6 | backend/routes/integrations.js |
+| AIWineSpiritsinventorySommelier | sommelier_progress | SQL | 6 | backend/routes/integrations.js |
+| AIWineSpiritsinventorySommelier | staff | SQL | 14 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | suppliers | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | tasting_journal | SQL | 19 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | tasting_notes | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | temperature_log | SQL | 10 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | users | SQL | 6 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | vintage_valuation | SQL | 23 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | wine_clubs | SQL | 18 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | wine_events | SQL | 15 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | wine_labels | SQL | 17 | backend/schema.sql |
+| AIWineSpiritsinventorySommelier | wishlist | SQL | 15 | backend/schema.sql |
 | independentRestaurant | AIRecommendation | Prisma | 7 | prisma/schema.prisma |
 | independentRestaurant | AiResult | Prisma | 11 | prisma/schema.prisma |
 | independentRestaurant | ConciergeMessage | Prisma | 10 | prisma/schema.prisma |
